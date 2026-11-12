@@ -1,0 +1,45 @@
+# מגרש המשחקים של עמית
+
+שער כניסה למשחקי דפדפן ולמיני־פרויקטים, עם תצוגה מותאמת לטלפון ולמחשב. כל כרטיס מוביל לפרויקט שפורסם ב־GitHub Pages.
+
+**האתר** — https://amitshe.github.io/
+
+## מה נמצא באתר
+
+- [Tidelight](https://amitshe.github.io/tidelight/) — משחק מגע עם מגדלור וסירות.
+- [דיסקו פיג׳מות](https://amitshe.github.io/pajama-disco/) — משחק ריקוד מוזיקלי שנוצר עבור איימי.
+- [קוד המקור של Tidelight](https://github.com/AmitShe/tidelight) ו[קוד המקור של דיסקו פיג׳מות](https://github.com/AmitShe/pajama-disco) נמצאים בריפוזיטוריז נפרדים.
+
+## צילומי מסך
+
+<p align="center">
+  <img src="screenshots/mobile.jpg" alt="שער הכניסה בתצוגת טלפון" width="230">
+  <img src="screenshots/desktop.jpg" alt="שער הכניסה בתצוגת מחשב" width="600">
+</p>
+
+## הוספת פרויקט
+
+1. מוסיפים תמונת תצוגה לתיקיית `assets/`.
+2. משכפלים אחד מכרטיסי `project-card` בתוך `project-grid` בקובץ `index.html`.
+3. מעדכנים בקישור הכרטיס את כתובת הפרויקט, את הכותרת, התיאור וטקסט התמונה.
+4. מעדכנים את מספר הפרויקטים ב־`project-count`.
+5. דוחפים את השינוי לענף `main`. GitHub Pages מפרסם את הגרסה המעודכנת.
+
+## הפעלה מקומית
+
+אין שלב בנייה. מתוך תיקיית הפרויקט:
+
+```sh
+python3 -m http.server 8000
+```
+
+פותחים את http://localhost:8000/ בדפדפן.
+
+## מבנה הפרויקט
+
+- `index.html` מכיל את התוכן וקישורי הפרויקטים.
+- `styles.css` מגדיר את הפריסה, הטיפוגרפיה והמצבים לטלפון ולמחשב.
+- `assets/` מכילה תמונות תצוגה, סמל וגופנים. רישיון הגופן נמצא ב־`assets/rubik-license.txt`.
+- `screenshots/` מכילה צילומי מסך לתיעוד.
+
+האתר סטטי ומתפרסם משורש ענף `main` באמצעות GitHub Pages. הקובץ `.nojekyll` מבקש הגשה ישירה של הקבצים.
