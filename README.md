@@ -10,6 +10,8 @@
 
 ## מה נמצא באתר
 
+- [מאפיית הכפל](https://amitshe.github.io/multiplication-bakery/) — תרגול לוח הכפל עד 10×10 עם מגשי עוגיות. [קוד מקור](https://github.com/AmitShe/multiplication-bakery).
+- [מוסך הזיכרון](https://amitshe.github.io/memory-garage/) — משחק קלפים עם כלי רכב וזוג נוסף בכל שלב. [קוד מקור](https://github.com/AmitShe/memory-garage).
 - [כדור בעננים](https://amitshe.github.io/cloud-kick/) — שלושה אתגרי כיוון ותזמון לגילאי 5–6 עם ספיידרמן, כדורגל, מטוס ומנוף. [קוד מקור](https://github.com/AmitShe/cloud-kick).
 - [Tidelight](https://amitshe.github.io/tidelight/) — משחק מגע עם מגדלור וסירות.
 - [דיסקו פיג׳מות](https://amitshe.github.io/pajama-disco/) — משחק ריקוד מוזיקלי שנוצר עבור איימי.
