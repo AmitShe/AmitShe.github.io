@@ -10,7 +10,7 @@
 
 ## מה נמצא באתר
 
-- [כדור בעננים](https://amitshe.github.io/cloud-kick/) — משחק מגע לקטנטנים עם כדורגל, מטוס ומנוף. [קוד מקור](https://github.com/AmitShe/cloud-kick).
+- [כדור בעננים](https://amitshe.github.io/cloud-kick/) — שלושה אתגרי מגע לקטנטנים עם ספיידרמן, כדורגל, מטוס ומנוף. [קוד מקור](https://github.com/AmitShe/cloud-kick).
 - [Tidelight](https://amitshe.github.io/tidelight/) — משחק מגע עם מגדלור וסירות.
 - [דיסקו פיג׳מות](https://amitshe.github.io/pajama-disco/) — משחק ריקוד מוזיקלי שנוצר עבור איימי.
 - [קוד המקור של Tidelight](https://github.com/AmitShe/tidelight) ו[קוד המקור של דיסקו פיג׳מות](https://github.com/AmitShe/pajama-disco) נמצאים בריפוזיטוריז נפרדים.
