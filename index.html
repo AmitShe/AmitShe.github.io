@@ -13,138 +13,127 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
   <link rel="manifest" href="manifest.json?v=2">
   <link rel="preload" href="assets/rubik-hebrew.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <div class="page">
     <header class="site-header">
-      <a class="brand" href="/" aria-label="מגרש המשחקים של עמית, חזרה לראש העמוד">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></span>
-        <span><strong>עמית</strong><small>מגרש המשחקים</small></span>
+      <a class="brand" href="/">
+        <img src="assets/apple-touch-icon.png?v=2" alt="" width="38" height="38">
+        <span>מגרש המשחקים של עמית</span>
       </a>
-      <nav aria-label="ניווט ראשי">
-        <a href="#projects">הפרויקטים</a>
-        <a href="https://github.com/AmitShe" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-line"></span> כאן מתחילים לשחק</div>
-          <h1 id="hero-title">לאן מתחשק <em>לשחק?</em></h1>
-          <p>המשחקים והמיני־פרויקטים שלי, במקום אחד. בוחרים משהו מסקרן ופותחים מיד בדפדפן.</p>
-          <a class="hero-button" href="#projects">לבחור משחק <span aria-hidden="true">↓</span></a>
+    <main class="projects-section" id="projects" aria-labelledby="projects-title">
+      <h1 id="projects-title">מה משחקים <span>היום?</span></h1>
+      <div class="project-toolbar" hidden>
+        <div class="project-filters" role="group" aria-label="סוג משחק">
+          <button type="button" data-filter="all" aria-pressed="true">הכול</button>
+          <button type="button" data-filter="math" aria-pressed="false">חשבון</button>
+          <button type="button" data-filter="memory" aria-pressed="false">זיכרון</button>
+          <button type="button" data-filter="precision" aria-pressed="false">דיוק</button>
+          <button type="button" data-filter="music" aria-pressed="false">מוזיקה</button>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="halo halo-one"></div>
-          <div class="halo halo-two"></div>
-          <div class="art-frame art-frame-sea">
-            <img src="assets/tidelight.jpg" alt="" fetchpriority="high">
-            <span>TIDELIGHT</span>
-          </div>
-          <div class="art-frame art-frame-party">
-            <img src="assets/pajama-disco.jpg" alt="" fetchpriority="high">
-            <span>דיסקו פיג׳מות</span>
-          </div>
-          <span class="asterisk asterisk-one">✳</span>
-          <span class="asterisk asterisk-two">✳</span>
-        </div>
-      </section>
+        <p class="project-count" role="status"></p>
+      </div>
 
-      <section class="projects-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow"><span class="eyebrow-line"></span> אוסף המשחקים</div>
-            <h2 id="projects-title">מה משחקים היום?</h2>
-          </div>
-          <span class="project-count">5 פרויקטים</span>
-        </div>
+      <div class="project-grid">
+        <article class="project-card" data-category="math">
+          <a href="https://amitshe.github.io/multiplication-bakery/" aria-label="לשחק במאפיית הכפל" aria-describedby="bakery-description">
+            <div class="project-image">
+              <img src="assets/multiplication-bakery.jpg" alt="שני ארנבים אופים עוגיות כוכב במאפייה">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <div class="project-content">
+              <h2>מאפיית הכפל</h2>
+              <p id="bakery-description">כפל וחילוק עם עוגיות</p>
+            </div>
+          </a>
+        </article>
 
-        <div class="project-grid">
-          <article class="project-card bakery-card">
-            <a href="https://amitshe.github.io/multiplication-bakery/" aria-label="לשחק במאפיית הכפל">
-              <div class="project-image">
-                <img src="assets/multiplication-bakery.jpg" alt="שני ארנבים אופים עוגיות כוכב במאפייה" loading="lazy">
-                <span class="image-corner" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-content">
-                <span class="project-kind">כפל וחילוק</span>
-                <h3>מאפיית הכפל</h3>
-                <p>מתרגלים כפל וחילוק לפי לוח הכפל עד 10×10, ונעזרים בעוגיות כדי למלא מגש אחר מגש.</p>
-                <span class="project-link">לפתוח ולשחק <span aria-hidden="true">←</span></span>
-              </div>
-            </a>
-          </article>
+        <article class="project-card" data-category="memory">
+          <a href="https://amitshe.github.io/memory-garage/" aria-label="לשחק במוסך הזיכרון" aria-describedby="garage-description">
+            <div class="project-image">
+              <img src="assets/memory-garage.jpg" alt="מטוס, מנוף וכלי רכב צבעוניים בסגנון צעצועים">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <div class="project-content">
+              <h2>מוסך הזיכרון</h2>
+              <p id="garage-description">מוצאים זוגות של כלי רכב</p>
+            </div>
+          </a>
+        </article>
 
-          <article class="project-card garage-card">
-            <a href="https://amitshe.github.io/memory-garage/" aria-label="לשחק במוסך הזיכרון">
-              <div class="project-image">
-                <img src="assets/memory-garage.jpg" alt="מטוס, מנוף וכלי רכב צבעוניים בסגנון צעצועים" loading="lazy">
-                <span class="image-corner" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-content">
-                <span class="project-kind">משחק זיכרון</span>
-                <h3>מוסך הזיכרון</h3>
-                <p>הופכים קלפים ומחפשים כלי רכב תאומים. בכל שלב מצטרף זוג חדש.</p>
-                <span class="project-link">לפתוח ולשחק <span aria-hidden="true">←</span></span>
-              </div>
-            </a>
-          </article>
+        <article class="project-card" data-category="precision">
+          <a href="https://amitshe.github.io/cloud-kick/" aria-label="לשחק בכדור בעננים" aria-describedby="cloud-description">
+            <div class="project-image">
+              <img src="assets/cloud-kick.jpg?v=2" alt="ספיידרמן, מטוס ומנוף מעל מגרש כדורגל בעננים" loading="lazy">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <div class="project-content">
+              <h2>כדור בעננים</h2>
+              <p id="cloud-description">כדורגל ומשימות תזמון</p>
+            </div>
+          </a>
+        </article>
 
-          <article class="project-card cloud-card">
-            <a href="https://amitshe.github.io/cloud-kick/" aria-label="לשחק בכדור בעננים">
-              <div class="project-image">
-                <img src="assets/cloud-kick.jpg?v=2" alt="ספיידרמן, מטוס ומנוף מעל מגרש כדורגל בעננים" loading="lazy">
-                <span class="image-corner" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-content">
-                <span class="project-kind">משחק מגע לגילאי 5–6</span>
-                <h3>כדור בעננים</h3>
-                <p>עוקפים שוער, מתזמנים ירי קורים עם ספיידרמן ומטיסים כדור דרך טבעות.</p>
-                <span class="project-link">לפתוח ולשחק <span aria-hidden="true">←</span></span>
-              </div>
-            </a>
-          </article>
+        <article class="project-card sea-card" data-category="precision">
+          <a href="https://amitshe.github.io/tidelight/" aria-label="לשחק ב־Tidelight" aria-describedby="tide-description">
+            <div class="project-image">
+              <img src="assets/tidelight.jpg" alt="מגדלור מאיר ים חשוך" loading="lazy">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <div class="project-content">
+              <h2><bdi lang="en">Tidelight</bdi></h2>
+              <p id="tide-description">מכוונים אור לסירות</p>
+            </div>
+          </a>
+        </article>
 
-          <article class="project-card sea-card">
-            <a href="https://amitshe.github.io/tidelight/" aria-label="לשחק ב־Tidelight">
-              <div class="project-image">
-                <img src="assets/tidelight.jpg" alt="מגדלור מאיר ים חשוך" loading="lazy">
-                <span class="image-corner" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-content">
-                <span class="project-kind">משחק מגע</span>
-                <h3><span lang="en" dir="ltr">Tidelight</span></h3>
-                <p>משמרת לילה על הים. מכוונים את האור ועוזרים לסירות למצוא את הדרך.</p>
-                <span class="project-link">לפתוח ולשחק <span aria-hidden="true">←</span></span>
-              </div>
-            </a>
-          </article>
-
-          <article class="project-card party-card">
-            <a href="https://amitshe.github.io/pajama-disco/" aria-label="לשחק בדיסקו פיג׳מות">
-              <div class="project-image">
-                <img src="assets/pajama-disco.jpg" alt="ארבע בובות פרווה על רחבת ריקודים" loading="lazy">
-                <span class="image-corner" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-content">
-                <span class="project-kind">משחק מוזיקלי</span>
-                <h3>דיסקו פיג׳מות</h3>
-                <p>מסיבה קטנה לאיימי. בוחרים אביזר, רוקדים עם הבובות ואוספים כוכבים.</p>
-                <span class="project-link">לפתוח ולשחק <span aria-hidden="true">←</span></span>
-              </div>
-            </a>
-          </article>
-        </div>
-      </section>
+        <article class="project-card party-card" data-category="music">
+          <a href="https://amitshe.github.io/pajama-disco/" aria-label="לשחק בדיסקו פיג׳מות" aria-describedby="disco-description">
+            <div class="project-image">
+              <img src="assets/pajama-disco.jpg" alt="ארבע בובות פרווה על רחבת ריקודים" loading="lazy">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <div class="project-content">
+              <h2>דיסקו פיג׳מות</h2>
+              <p id="disco-description">רוקדים עם הבובות</p>
+            </div>
+          </a>
+        </article>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <span class="footer-mark" aria-hidden="true">✳</span>
-      <p>עוד רעיונות יופיעו כאן.</p>
-      <a href="https://github.com/AmitShe" target="_blank" rel="noopener noreferrer">הקוד ב־GitHub ↗</a>
+      <a href="https://github.com/AmitShe" target="_blank" rel="noopener noreferrer">הקוד ב־GitHub <span aria-hidden="true">↗</span></a>
     </footer>
   </div>
+  <script>
+    const toolbar = document.querySelector(".project-toolbar");
+    const filters = toolbar.querySelectorAll("[data-filter]");
+    const cards = document.querySelectorAll(".project-card");
+    const count = toolbar.querySelector(".project-count");
+
+    function showCategory(activeFilter) {
+      const category = activeFilter.dataset.filter;
+      let visibleCount = 0;
+      for (const card of cards) {
+        const matches = category === "all" || card.dataset.category === category;
+        card.hidden = !matches;
+        if (matches) visibleCount++;
+      }
+      for (const filter of filters) {
+        filter.setAttribute("aria-pressed", String(filter === activeFilter));
+      }
+      count.textContent = visibleCount === 1 ? "משחק אחד" : `${visibleCount} משחקים`;
+    }
+
+    for (const filter of filters) {
+      filter.addEventListener("click", () => showCategory(filter));
+    }
+    showCategory(filters[0]);
+    toolbar.hidden = false;
+  </script>
 </body>
 </html>
