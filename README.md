@@ -17,6 +17,8 @@
 - [דיסקו פיג׳מות](https://amitshe.github.io/pajama-disco/) — משחק ריקוד מוזיקלי שנוצר עבור איימי.
 - [קוד המקור של Tidelight](https://github.com/AmitShe/tidelight) ו[קוד המקור של דיסקו פיג׳מות](https://github.com/AmitShe/pajama-disco) נמצאים בריפוזיטוריז נפרדים.
 
+- [FTO Quest](https://amitshe.github.io/fto-quest/) — לומדה אינטראקטיבית בעברית עם תנועות, אתגרי התחלה ומעבדת תרגול. [קוד מקור](https://github.com/AmitShe/fto-quest).
+
 ## צילומי מסך
 
 <p align="center">
